@@ -1,0 +1,19 @@
+{
+    "name": "customnode",
+    "version": "1.0.0",
+    "description": "My Custom Node",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "",
+    "license": "ISC",
+    "node-red": {
+        "nodes": {
+            "customnode": "customnode.js"
+        }
+    },
+    "dependencies": {
+        "mongoose": "^5.9.19"
+    }
+}

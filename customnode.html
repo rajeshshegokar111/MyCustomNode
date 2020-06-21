@@ -1,0 +1,82 @@
+<script type="text/javascript">
+    RED.nodes.registerType('customnode',{
+        category: 'function',
+        color: '#a6bbcf',
+        defaults: {
+            name: {value:"My Custom Node"},
+            topic: {value: "Topic 1"},
+            max: {value: 100},
+            min: {value: 0},
+            maxThreshold: {value: 80},
+            minThreshold: {value: 20},
+            topic2: {value: "Topic 2"},
+            max2: {value: 100},
+            min2: {value: 0},
+            maxThreshold2: {value: 60},
+            minThreshold2: {value: 40}
+        },
+        inputs:1,
+        outputs:1,
+        icon: "",
+        label: function() {
+            return this.name||"customnode";
+        }
+    });
+</script>
+<script type="text/x-red" data-template-name="customnode">
+    <div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i>Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+    <label for="node-input-config"><i class="icon-tag"></i>configuration</label>
+    -----------------------------------------------------------------------------
+    <div id="topic1"> 
+    <div class="form-row">
+        <label for="node-input-topic"><i class="icon-tag"></i>Topic</label>
+        <input type="text" id="node-input-topic" placeholder="Topic">
+    </div>
+    <div class="form-row">
+        <label for="node-input-min"><i class="icon-tag"></i>Min</label>
+        <input type="text" id="node-input-min" placeholder="Min">
+    </div>
+    <div class="form-row">
+        <label for="node-input-max"><i class="icon-tag"></i>Max</label>
+        <input type="text" id="node-input-max" placeholder="Max">
+    </div>
+    <div class="form-row">
+        <label for="node-input-minThreshold"><i class="icon-tag"></i>Min Threshold</label>
+        <input type="text" id="node-input-minThreshold" placeholder="Min Threshold">
+    </div>
+    <div class="form-row">
+        <label for="node-input-maxThreshold"><i class="icon-tag"></i>Max Threshold</label>
+        <input type="text" id="node-input-maxThreshold" placeholder="Max Threshold">
+    </div>
+    </div>
+    ----------------------------------------------------------------------------
+    <div id="topic2"> 
+    <div class="form-row">
+        <label for="node-input-topic2"><i class="icon-tag"></i>Topic</label>
+        <input type="text" id="node-input-topic2" placeholder="Topic">
+    </div>
+    <div class="form-row">
+        <label for="node-input-min2"><i class="icon-tag"></i>Min</label>
+        <input type="text" id="node-input-min2" placeholder="Min">
+    </div>
+    <div class="form-row">
+        <label for="node-input-max2"><i class="icon-tag"></i>Max</label>
+        <input type="text" id="node-input-max2" placeholder="Max">
+    </div>
+    <div class="form-row">
+        <label for="node-input-minThreshold2"><i class="icon-tag"></i>Min Threshold</label>
+        <input type="text" id="node-input-minThreshold2" placeholder="Min Threshold">
+    </div>
+    <div class="form-row">
+        <label for="node-input-maxThreshold2"><i class="icon-tag"></i>Max Threshold</label>
+        <input type="text" id="node-input-maxThreshold2" placeholder="Max Threshold">
+    </div>
+    </div>
+    ----------------------------------------------------------------------------
+</script>
+<script type="text/x-red" data-help-name="customnode">
+    <p>Custom  Node by Rajesh</p>
+</script>
